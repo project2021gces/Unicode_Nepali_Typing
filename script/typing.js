@@ -383,11 +383,6 @@ function updateContent() {
                         displayNextWord();
                         
                     }
-                    else if(currentIndex > currentlesson.length)
-                    {
-                       
-                        //document.removeEventListener("keydown",)
-                    }
                 }
             }
             
