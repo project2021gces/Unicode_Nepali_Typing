@@ -354,7 +354,6 @@ function updateContent() {
                 else {
                     wordDisplay.textContent = "Practice complete!";
                     document.removeEventListener("keydown", typing);
-                   // console.log("Practice Completed!");
                 }
             }
             // keyevent
@@ -365,27 +364,26 @@ function updateContent() {
                     
                     currentWord = currentlesson[currentIndex];
                     typedCharacters = "";
-                    typedWord.textContent = ""; // Clear the typed word
+                    typedWord.textContent = ""; 
                     displayNextWord();   
                 } else if (currentWord && event.key === currentWord[typedCharacters.length]) {
                     // Correct key pressed, add to typed characters
                     typedCharacters += event.key;
                     const mappedTypedCharacters = typedCharacters
                         .split('')
-                        .map(char => keyMapping[char] || char) // Replace with mapped value if exists
+                        .map(char => keyMapping[char] || char) // Replace by unicode 
                         .join('');
                          typedWord.textContent = mappedTypedCharacters;
                     
                     if (typedCharacters.length === currentWord.length) {
                         typedCharacters = "";
-                        typedWord.textContent = ""; // Clear the typed word
+                        typedWord.textContent = ""; 
                         currentIndex++;
                         displayNextWord();
                         
                     }
                 }
-            }
-            
+            }  
             // Initial display
             displayNextWord();
         }
