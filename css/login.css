@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(170deg, rgb(150, 200, 214) -40%, rgba(68, 165, 203, 0.95) 64%, rgba(255, 250, 250, 0.85) 64%, rgba(255, 250, 250, 0.85) 100%), url('../_images/BG.svg');
+    background-position: center;
+    background-size: cover; 
+    display: inline-block;
+}
+header{
+    position: fixed;
+    width:100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    padding: 0 10px;
+   
+}
+.navbar{
+    display: flex;
+    padding: 22px 0;
+    align-items: center;
+    max-width: 1350px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.logo {
+    width: 400px;
+}
+.navbar .logotext{
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.navbar .logotext h2{
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.7rem;
+}
+.form-box{
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background:#ffffff;
+    padding: 50px 60px 50px;
+    text-align:center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+/*blur the backgroud section while popup action*/
+.form-box#blur.active{
+    filter: blur(5px);
+    pointer-events: none;
+    user-select: none;
+}
+
+/*Eror and Success Message*/
+.form-box .input-group .error-txt{
+    background: rgb(238, 198, 198);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 15px;
+    font-size: 0.96rem;
+    color: red;
+    margin: 0px;
+}
+.form-box .input-group .success-txt{
+    background: rgb(174, 217, 176);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 15px;
+    font-size: 0.96rem;
+    color:green;
+    margin: 0px;
+}
+
+.form-box h1{
+    font-size: 30px;
+    margin-bottom: 40px;
+    color: #0091ca ;
+    position: relative;
+}
+.form-box h1:after{
+    content:'';
+    width:30px;
+    height:4px;
+    border-radius:3px;
+    background:#0091ca;
+    position:absolute;
+    bottom:-12px;
+    left:50%;
+    transform:translateX(-50%);
+}
+.input-field{
+    font-size: 0.96rem;
+    background:#eaeaea;
+    margin: 10px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+}
+
+input{
+    width: 100%;
+    background: transparent;
+    border:0;
+    outline:0;
+    padding: 15px 15px;
+}
+
+.input-field i{
+    margin-left: 15px;
+    color: #999;
+}
+.form-box a{
+    font-size: 0.96rem;
+    text-decoration: none;
+    color: #0091ca;
+}
+.form-box a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.remember-forgot{
+    display: flex;
+    font-size: 0.96rem;
+}
+input[type="checkbox"]{
+    height: 14px;
+    width: 14px;
+    background-color: #d5d5d5;
+    border-radius: 5px;
+    cursor: pointer;
+    margin:2px 2px 0 2px;
+}
+.remember-forgot p{
+    display: flex;
+    margin-left: 110px;
+}
+.remember-forgot p{
+    font-size: 0.96rem;
+    text-decoration: none;
+    color: #0091ca;
+}
+.remember-forgot p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.btn-field{
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+}
+.btn-field button{
+    flex-basis:40%;
+    font-size: 16px;
+    background:#0091ca;
+    color:white;
+    font-weight: bold;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.btn-field button:hover{
+    background-color:#0091ca;
+    transform: scale(1.01);
+}
+
+.signup-link p{
+    text-align: center;
+    font-size: 0.96rem;
+}
+
+/*Reset password section style */
+.section{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    max-height: 0;
+    overflow: hidden;   /*to hide this section*/
+    transition: max-height 0.2s;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+/*popup action*/
+.section.open-menu{
+    max-height: 400px;
+    z-index: 10;
+}
+.container{
+    width: 500px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 16px;
+    background-color: rgba(0,0,0,0.08) 0px 4px 12px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.title-section{
+    margin-bottom: 20px;
+}
+.title{
+    color: #38475a;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-decoration: capitalize;
+}
+.para{
+    color: #38475a;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    text-decoration: capitalize;
+}
+.inputfield{
+    position: relative;
+}
+.inputfield .label-title{
+    color: #38475a;
+    text-decoration: capitalize;
+    margin-bottom: 10px;
+    font-size: 14px;
+    display:block;
+}
+.inputfield input{
+    width: 100%;
+    background-color: none;
+    color: #38475a;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 300;
+    border: 2px solid black;
+    padding: 9px 18px 9px 52px;
+    outline: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.inputfield input:placeholder{
+    color: #38475a;
+    font-size: 16px;
+    font-weight: 400;
+}
+.inputfield .icon{
+    position: absolute;
+    color: #38475a;
+    left: 13px;
+    top:calc(50% - 11px);
+    text-align: center;
+    font-size: 23px;
+}
+.btn{
+    position: relative;
+    justify-content: space-between;
+}
+.cancel-btn{
+    position: absolute;
+    height: 40px;
+    width: 60px;
+    font-size: 16px;
+    color:white;
+    background-color: #38475a7a;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    text-decoration: capitalize;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.cancel-btn:hover{
+    opacity: 0.95;
+}
+.submit-btn{
+    margin-left: 85px;
+    width: 80%;
+    height:40px;
+    background-color: rgb(39, 155, 201);
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    text-decoration: capitalize;
+    cursor: pointer;
+}
+.submit-btn:hover{
+    opacity: 0.95;  
+}

@@ -1,0 +1,472 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(180deg, rgb(150, 200, 214) -40%, rgba(68, 165, 203, 0.95) 30%, rgba(255, 250, 250, 0.85) 30%, rgba(255, 250, 250, 0.85) 100%), url(/_images/BG.svg);
+    /*
+    background-image: linear-gradient(170deg, #7AE846 -40%, rgba(76, 187, 23, 0.95) 64%, rgba(255, 250, 250, 0.85) 64%, rgba(255, 250, 250, 0.85) 100%), url(BG.svg);*/
+    background-position: center;
+    background-size: cover; 
+    display: inline-block;
+}
+header{
+    position: relative;
+    width:100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    padding: 0 10px; 
+}
+.navbar{
+    padding: 12px 5% 5px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1350px;
+    
+}
+.logo {
+   width: 300px;
+}
+.logotext{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.logotext h2{
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.7rem;
+}
+.links{
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    right: 7%;
+    gap: 20px;
+    top: 22px;
+}
+.login-btn{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #fff;
+    width: 70px;
+    height: 25px;
+}
+.signup-btn{
+    display:flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #fff;
+    border: 2px solid;
+    border-color: #fff;
+    border-radius: 3px;
+    width: 70px;
+    height: 25px;
+}
+.signup-btn:hover{
+    color:lightseagreen;
+    background: white;
+    transition: 0.1s ease;
+    transform:scale(1.05);
+}
+.profile{
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    right: 7%;
+    gap: 20px;
+    top: 10px;
+    width: 40px;
+    max-height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.sub-menu-wrap{
+    position: absolute;
+    top: 100%;
+    right: 7%;
+    width:320px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s;
+    z-index: 2;
+}
+.sub-menu-wrap.open-menu{
+    max-height: 400px;
+}
+.sub-menu{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    background:#fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.user-info{
+    display: flex;
+    align-items: center;
+}
+.user-info h3{
+    font-weight: 500;
+}
+.user-info img{
+    width: 50px;
+    max-height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.sub-menu hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 15px 0 10px;
+}
+.sub-menu-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #525252;
+    margin: 12px 0;
+}
+.sub-menu-link i{
+    text-align: center;
+    width: 40px;
+    background: rgb(243, 241, 241);
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 15px;
+}
+.sub-menu-link p{
+    width: 100%;
+}
+.sub-menu-link:hover p{
+    font-weight: 600;
+}
+
+/* APP Css */
+.wrapper{
+    height: 180px;
+    padding-left:   px;
+    background: #85dafe;
+    display: flex;
+    flex-direction: row;
+}
+ /*select container */
+ .selectoption {
+    position: relative;
+    width: 200px;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600px bold;
+ }
+ #difficulty{
+    margin-left: 10px;
+ }
+ #difficulty, #keyRow{
+     scrollbar-width: none;
+ }
+ #lessons{
+     scrollbar-width: none;
+ }
+ select:focus {
+ outline: none;
+ }
+ .selectoption :selected{
+     background-color: rgb(174, 248, 244);
+ }
+ option::selection{
+     font-weight: 600;
+     background-color: rgb(174, 248, 244);
+     display: flex;
+     align-items: center;
+     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+ }
+ option:checked, option:hover{
+     font-weight: 600;
+     background-color: rgb(174, 248, 244);
+     display: flex;
+     align-items: center;
+     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+ }
+ .optionlist {
+     padding: 8px;
+ }
+/*Selection options completed*/
+
+
+.lvlprogress{
+    display: flex;
+    padding: 20px 30px 20px 30px;
+    min-width: 750px;
+    max-width: 800px;
+    border: 2px solid white;
+    flex-direction: column;
+}
+.lvlprogress .username{
+    margin-top: 10px;
+    text-align: center;
+}
+.username input{
+   padding-left: 10px;
+   height: 22px;
+}
+.levelbar{
+    border: 2px solid #44a5cb;
+    width: 100%;
+    margin:10px 0px 20px 0px;
+}
+.levelbar .bar{
+    width: 60%;
+    background-color: #44a5cb;
+    text-align: center;
+}
+.typingdetils{
+    border: 2px solid white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    text-align: right;
+    padding: 20px 10px 20px 30px;
+}
+.typingdetils label{
+    margin: 5px;
+    justify-content: center;
+}
+.container{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+/*Display content */
+.content{
+    font-size: 28px;
+    padding: 10px;
+    min-height: 150px;
+}
+#wordDisplay{
+    padding: 10px;
+    min-height: 50px;
+
+    border-bottom: none;
+}
+#typedWord{
+    padding: 10px;
+    min-height: 50px;
+}
+
+
+/* Stylesheet of keyboard */
+.housing{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+
+}
+.layout{
+    background-color:#B4D3C8;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: rgb(170, 170, 170) 0px 0px 1px 1px;
+    font-family: Mukta, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'
+}
+.numkey{
+    display: flex;
+   /* background-color:rgb(208, 149, 149);*/
+}
+.topkey{
+    display: flex;
+   /* background-color: aqua;*/
+}
+.homekey{
+    display: flex;
+   /* background-color:rgb(176, 239, 176);*/
+}
+.buttomkey{
+    display: flex;
+    /*background-color:rgb(172, 172, 239);*/
+}
+.controlkey{
+    display: flex;
+   /* background-color:rgb(242, 242, 175);*/
+}
+
+.key{
+    background-color: white; 
+    margin: 5px; 
+    border-radius: 5px; 
+    position: relative; 
+    overflow: hidden; 
+    height: 51.2px; 
+    width: 51.2px;
+    box-shadow: rgba(57, 62, 60, 0.687) 0px 1px 1px, rgba(57, 62, 60, 0.74) 0px 0px 1px 1px;
+}
+
+.key_show{
+    display: flex; 
+    flex-direction: row; 
+    place-items: center; 
+    height: 100%; 
+    width: 100%; 
+    font-weight: 500;
+}
+.eng_font{
+    width: 50%; 
+    vertical-align: bottom; 
+    display: flex; 
+    align-self: flex-end; 
+    font-family: Helvetica; 
+    padding: 3px; 
+    color: rgb(133, 133, 133); 
+    font-size: 12px;
+  
+}
+.nep_font{
+    display: flex; 
+    flex-direction: column; 
+    width: 100%; 
+    place-items: center;
+    text-align: center; 
+    font-family: Mukta, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size:16px;
+}
+
+.backspacekey{
+    background-color: white; 
+    margin: 5px; 
+    border-radius: 5px; 
+    position: relative; 
+    overflow: hidden; 
+    height: 51.2px; 
+    width: 76.8px;
+    box-shadow: rgba(57, 62, 60, 0.687) 0px 1px 1px, rgba(57, 62, 60, 0.74) 0px 0px 1px 1px;
+}
+.lkey-text{   
+    position: absolute; 
+    text-align: center; 
+    font-family: Helvetica; 
+    font-size: 14px; 
+    bottom: 5px; 
+    left: 10px;
+}
+.rkey-text{   
+    position: absolute; 
+    text-align: center; 
+    font-family: Helvetica; 
+    font-size: 14px; 
+    bottom: 5px; 
+    right: 10px;
+}
+
+.tabkey{
+    background-color: white; 
+    margin: 5px; 
+    border-radius: 5px; 
+    position: relative; 
+    overflow: hidden; 
+    height: 51.2px; 
+    width: 76.8px;
+    box-shadow: rgba(57, 62, 60, 0.687) 0px 1px 1px, rgba(57, 62, 60, 0.74) 0px 0px 1px 1px;
+}
+.capslock{
+    background-color: white; 
+    margin: 5px; 
+    border-radius: 5px;
+    position: relative; 
+    overflow: hidden; 
+    height: 51.2px; 
+    width: 95px;
+    box-shadow: rgba(57, 62, 60, 0.687) 0px 1px 1px, rgba(57, 62, 60, 0.74) 0px 0px 1px 1px;
+}
+.enterkey{
+    background-color: white; 
+    margin: 5px; 
+    border-radius: 5px; 
+    position: relative; 
+    overflow: hidden; 
+    height: 51.2px; 
+    width: 95px;
+    box-shadow: rgba(57, 62, 60, 0.687) 0px 1px 1px, rgba(57, 62, 60, 0.74) 0px 0px 1px 1px;
+}
+.shiftkey{
+    background-color: white; 
+    margin: 5px; 
+    border-radius: 5px; 
+    position: relative; 
+    overflow: hidden; 
+    height: 51.2px; 
+    width: 125px;
+    box-shadow: rgba(57, 62, 60, 0.687) 0px 1px 1px, rgba(57, 62, 60, 0.74) 0px 0px 1px 1px;
+}
+.ctrlkey{
+    background-color: white; 
+    margin: 5px; 
+    border-radius: 5px; 
+    position: relative; 
+    overflow: hidden; 
+    height: 51.2px; 
+    width: 54px;
+    box-shadow: rgba(57, 62, 60, 0.687) 0px 1px 1px, rgba(57, 62, 60, 0.74) 0px 0px 1px 1px;
+}
+.fnkey{
+    background-color: white; 
+    margin: 5px; 
+    border-radius: 5px; 
+    position: relative; 
+    overflow: hidden; 
+    height: 51.2px; 
+    width: 54px;
+    box-shadow: rgba(57, 62, 60, 0.687) 0px 1px 1px, rgba(57, 62, 60, 0.74) 0px 0px 1px 1px;
+}
+.winkey{
+    background-color: white; 
+    margin: 5px; 
+    border-radius: 5px; 
+    position: relative; 
+    overflow: hidden; 
+    height: 51.2px; 
+    width: 54px;
+    box-shadow: rgba(57, 62, 60, 0.687) 0px 1px 1px, rgba(57, 62, 60, 0.74) 0px 0px 1px 1px;
+}
+.altkey{
+    background-color: white; 
+    margin: 5px; 
+    border-radius: 5px; 
+    position: relative; 
+    overflow: hidden; 
+    height: 51.2px; 
+    width: 54px;
+    box-shadow: rgba(57, 62, 60, 0.687) 0px 1px 1px, rgba(57, 62, 60, 0.74) 0px 0px 1px 1px;
+}
+.spacebar{
+    display: flex;
+    background-color: white; 
+    margin: 5px; 
+    border-radius: 5px; 
+    position: relative; 
+    overflow: hidden; 
+    height: 51.2px; 
+    width: 320px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(57, 62, 60, 0.687) 0px 1px 1px, rgba(57, 62, 60, 0.74) 0px 0px 1px 1px;
+}
+
