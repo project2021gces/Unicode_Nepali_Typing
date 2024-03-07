@@ -2,6 +2,10 @@ const keyRowSelect = document.getElementById('keyRow');
 const difficultySelect = document.getElementById('difficulty');
 const levelSelect = document.getElementById('lessons');
 const wordDisplay = document.getElementById("wordDisplay");
+//for audio 
+const erroraudio = document.getElementById("error");
+const correctaudio = document.getElementById("correct");
+const progressBar = document.getElementById('progressbar');
 
 keyRowSelect.addEventListener('change', updateContent);
 difficultySelect.addEventListener('change', updateContent);
@@ -238,20 +242,6 @@ function updateContent() {
         '_': 'ओ',
         '=': '‍‍‍',
         '+': '‌',
-        //special characters
-        ' ': '‌ ',
-        '': '‌',
-        '': '‌',
-        '': '‌',
-        '': '‌',
-        '': '‌',
-        '': '‌',
-        '': '‌',
-        '': '‌',
-        '': '‌',
-        '': '‌',
-        '': '‌',
-        '': '‌'
     };
     //Exception handler--fetching contentMap according to selection
     function fetchcontentMap(contentMap, difficulty, keyRow, lesson) {
@@ -310,6 +300,8 @@ function updateContent() {
         } else if (currentWord && event.key === currentWord[typedCharacters.length]) {
             // Correct key pressed, add to typed characters
             typedCharacters += event.key;
+            correctaudio.play(); //play correct audio
+            erroraudio.pause();
             var mappedTypedCharacters = typedCharacters
                 .split('')
                 .map(char => keyMapping[char] || char) // Replace by unicode as define in keymapping
