@@ -174,16 +174,43 @@ function updateContent() {
             }
         },
         Advanced: {
-            lesson1: ["12435 a;sdlfkj;alsdkjfa;lsdkfj"],
-            lesson2: [" sdlfka;sdkjf;laksjdf;"],
-            lesson3: ["asldkfj;"],
-            lesson4: [],
-            lesson5: [],
-            lesson6: [],
-            lesson7: [],
-            lesson8: [],
-            lesson9: [],
-            lesson10: []
+            lesson1: ["c A O @ p U c A O @ p U", "P E _ - c| cm P E _ - c| cm", "s v u # < s v u # <", "r % h H ` r % h H `", "^ & * ( ) ^ & * ( )", "t y b w g t y b w g", "k K a e d k K a e d", "o / n j z o / n j z", "i ; x I q ! i ; x I q !",
+                "c A O @ p U c A O @ p U", "P E _ - c| cm P E _ - c| cm", "s v u # < s v u # <", "r % h H ` r % h H `", "^ & * ( ) ^ & * ( )", "t y b w g t y b w g", "k K a e d k K a e d", "o / n j z o / n j z", "i ; x I q ! i ; x I q !"
+            ],
+            lesson2: ["s sf sl sL s' s\"", "s] s} sJ sB s| sm", "u uf ul uL u' u\"", "u] u} uJ uB u| um", "r rf rl rL r' r\"", "r] r} rJ rB r| rm", "h hf hl hL h' h\"", "h] h} hJ hB h| hm", "^ ^f ^l ^L ^' ^\"", "^] ^} ^J ^B ^| ^m",
+                "* *f *l *L *' *\"", "*] *} *J *B *| *m", "y yf yl yL y' y\"", "y] y} yJ yB y| ym", "g gf gl gL g' g\"", "g] g} gJ gB g| gm", "e ef el eL e' e\"", "e] e} eJ eB e| em", "d df dl dL d' d\"", "d] d} dJ dB d| dm", "n nf nl nL n' n\"", "n] n} nJ nB n| nm", "z zf zl zL z' z\"", "z] z} zJ zB z| zm", "x xf xl xL x' x\"", "x] x} xJ xB x| xm"
+            ],
+            lesson3: ["gvJh\\g' x} dnf@ a;g\\t Ct'sJ x/lofnLdf", "d t phf* d?e'dldf x[/f@ ;s]%'", "g;d\\Hlg' x} dnf@ s'g} v'zlofnLdf", "d t b'mv / AFz'sJ ;fu/df kJ *'al ;s]%'", "gvJh\\g' x} dnf@ k\"[)ldfsJ h'g]nL /ftdf", "d t 55 *lu\\/LsJ #fddf hn\\g k'u]%'", "gvJh\\g' x} dnf@ xhf/J| b'glofFsJ el*df", "d t afn'j} afn'jfsJ d?e'dL df k'uL ;s]%'",
+                "gvJh\\g' x] dnf@ j/klknsJ %xf/Ldf", "d t ?v} gePsJ d?e'dLdf kJ d*f/lg k'uL ;s]%'", "gvJh\\g' x} dnf@ hg\\de'dlsJ s'gf s'gfdf", "d t ufpF w/ %f*L ;d'g\\b\\/ t/L k/fO agl ;s]%'", "gvJh\\g' x} dnf@ kxlnfsJ ufpF #/sJ &]ufgfdf", "d t ca k/b]zL kJ e};s]%'"
+            ],
+            lesson4: ["s'g} ;do yloJ d}n] n]v\\g %J*l;s]sJ ylP", "AFvf t ylP d]/f t/ b]v\\g %f*l;s]sJ ylP", "d ;fob alnf@ hfg\\y]| xJnf xfjf ;Fu}", "afFsL x'Fb} ylPg d]/J c;\\tlt\\j st}", "xJ t\\oxL ;dodf e]^]sJ yloJ d}n] Pp^f sjltf", "d}n] n]v\\g g;s]sJ sjltf", "t\\oxL sjltf h;\\n] h;\\t} hg\\d bloJ y'k\\/} sjltfx?", "h;df %g w]/} za\\bx? cgl efj n's]sf",
+                "cgulg\\tL ;kgf cgl v\\jfj n's]sf", "oJ sjltf cfK}Fdf pkg\\of; eg\\bf sd %}g", "t\oJ sljtf s'g} alz\\jfz eg\\bf sd %}g", ";fFr\\r} /dfOnJ cgB&J / crd\\dsJ % t\\oJ sjltf", "x[i % pn\\nf; % cfK\\gJ kgsJ Ajf;sf", ";fFr\\r} /fd\/J % t\\oJ sjltf d}n] n]v\\g g;s]sJ sjltf", "t\\oxL sjltf h;\\tJ dnfO sjl agfoJ", "t/ s'g} cK;Jr %}g rfx]/ kgl n]v\\g ;slg t\\oJ t sjltf",
+                "slg sl n]v\\g g;slg] t\\oJ d]/J Ak\\g} sjltf xJ", "d\/J hLjgsJ gls} k\\/lo sjltf x'g]b ;w} d]/J ghls", "x/bd x/kn x/]s kfOnfx?df", "d]/J hLjgsJ ;a}eg\\bf pt\\s{i\\^ sjltf", "d}n] n]v\\g g;s]sJ sjltf"
+            ],
+            lesson5: ["alpFHL /Jbgdf snlnJ", "dw'/J pifsJ dJxgLdf .", "a}|; j;g\\t jlxf/ ;kgf", "s';'dfs/sL w\\jgldf .", "k\\/]d rsJ/ h'g]nL hfb\"", "z/fj gzfdf rds gh/df .", ";'g\\b/df ;a jlzfn jlnf;L", ";'vdf sJdn ;\\kg\\bgdf .", "gj gj Hn\\sf b]z al/fgf", "celnfifsf pr\\r p*fg .", "-kg\\of;ls /D  / nx/L xn'sf d'^'sJ xn'sf ufg .", "s[d I]qsJ hJz gjLg", "j;\\t'x?sJ hJv / tBn .",
+                "ko/ b'j}sf e/df gl[e/ rB*f hut ;\\jtg\\q dJn .", "/D p*]sJ s^'tf KJ;\\/f Azfx?sJ %f/J rJ/ .", "rlg\\tf zJs jloJu a(]sf", "gx'FbJ zl/df t[s c#J/ .", ";l[hgfsJ hfn jlnf;L", "AK}| h]nL AK}| xf/ .", "K'n\\bJ zl/df xlpFb t'if/J", "ylrL/x]sJ huj\\ojxf/ .", "a(\\bJ r]t cs]nfkgsJ", "al[;l;s]sf ;kgf ;fh .", "pbf;kgfsJ %fgf ge g}", "zJs jlifb al/fgf Ajfh .",
+                "hkdfnfsJ Avl/ e/df", "w/d/ ko/ h/fsJ sd\\kg .", "AF;'e/L gh/ gldLng", "jlrlq g} %;\\ x] hLjg."
+            ],
+            lesson6: ["d rlof ne/", "rT Awf rd\\rf rlgL xfn]/", "rlofkQL / kfgLdf #JnL", "Ps ulnf; rlof r';\\sL xfg\\b}", "rl;lb} u/]sJ rf;nfu\\bJ ;fHdf", "rlofpb} %' rlQ ga'H]sJ hLjgnf@", "rl^lZ k/]sJ dfg\\%]nf@", "rlg]sJ grlg]sJ ;a}nf@", "rT x][b} rlofsL r';\\sL xfg\\b}", "r'[n'd\\d *'a\\b}%' cg\\oJnsJ ejli\\odf .", "c[sJ r';\\sL rlof", "o; k^s K/s ;\\jfbdf",
+                "rf/ blg c#l rf/ ah] tl/sJ s'/f ;d\\HlFb}", "#/sJ rJsdf rJ/LsJ gfdf r'/f ahf[b} r';lPsJ sfOnfnf@", "rBk^} kf[g] u/L r*\\sfPsf ylP", "rfg\\bgL Ag\\^Ln] .", "t];\\/J rJyJ r';\\sL;Fusf aftx?", "r'[gf k/]sf ;dfhsf gsr/fx?nf@ ;d[klt", "h;\\n] g r/fnf@ gl;\\kls\\/L p*\\g blg\\%g\\", "g r/fH} p*\\g rfxg] snlnf ;kgfx?nf@",
+                "dfq AK\\g} rfxgf c?df yJkf[b} hfg\\%g\\ .", "cg\\tld rlofsJ r';\\sL", "g hLjgdf ;'vLsf /; AP H} nfu\\%", "g hLjgn] hlpg] hLp kfP% h}", ";fob rlof h;\\t} /x]% ;f/fsJ hLjg", "x/]s hLjgsf r's\\;L nJenfu\\bJ t x'g] t/", "cg\\t\\df /lQJ ulnf; h} vfnL x'g] /x]% hLjg ."
+            ],
+            lesson7: ["cefj / _hn] pdf/lPsf p[hfx?", "AuJ ag]/ an\\g g;s] i%L cu]gfdf", "eo|s/ o'$ n*l/x]sL %lg\\ Adf", "%J/fsJ ejli\\o ;lFg\\rfpg aufpF%lg\\ k;lgf", "/ ('Dfnf@ blP/ AK\\g} z/l/ vfgf", "n*\\%lg\\ ulTL df[tJn;Fu o'$", "ha df[tJnn] gl/g\\t/ _sn\\% s[sz w\\jgl", "Adf ;g\\g ;s\\blgg\\ %J/fsJ rlr\\ofx^ kgl",
+                "ha ;'g\\%lg\\ AtlPH}| st}", "sfvdf r\\ofk]/ r';fpF%lg\\ kfn]kfnJ ;\\tg", "/ v;fpF%lg\\ Adf", "k;lgfh;\\t} AF;' tk\\k tk\\k %J/fsJ glwf/df", "w[tLn] aJH aJs]/ AFugdf ;'g\\b/", "K\"n K'nfPHF", "K'nfpg' % Adfnf@ kgl ;g\\tfg", "AK\" ag]/ j]ujfg kfgLn] ^J*]sJ au/ h;\\t}", "x'[sfpg'%  Adfn@ kgl ;kgf s]xL yfg",
+                "nuffOblg'% %J/fnf@ A<df eJ^J", "@fdsJ tfkn] ;'sfPsJ z/l/ agl;s\\oJ s|sfn h;\\t}", "nfu\\% Adfnf@ u'dfPsJ %}g s]xL", "Adf x/]s I) dx;'; u[%g\\ %J/fsJ d'v x]/]/", ";|;f/ kfPsJ h;\\t} xf/] kgl hlt]sJ h;\\t}", "kfgLn] /D abn] h;\\t}", "abnlFbJ %g\\ cH Adfsf ;kgf / /x/x?", "cK;Jr\\ t\\oxL ('DfH} K'^l/x]%g\\", "Adfsf jlz\jf; / Afzfx?"
+            ],
+            lesson8: ["egg egg gfgL . s] u/L eJ tof/", "slt /;;lt /fd\\/J s\\of dhf r^ s\\of /", ";sn d'v b'?;\\t} kf[g ;s\\g] ckf/", "slt rt'/ s'/f oJ hJ % t;\\jL/ ;f/ .", "d'v kgl % b'?;\\t} gfs tf &lZ Hg\\ %", "/|u kgl t n'ufsJ &lZ s\\of x]/ . ag\\% .", "/l; v'z uha}sf efp %g\\ s\\of b'?;\\t", "d t blg blg x][b} ag\\%' Agg\\b d;\\t .",
+                ";a hgsg o;\\t} rlqsf/L s'g}n]", "a'?z;lt agfP s\\of/ sn\\k]/ k}n] .", "x{boe/ ePsf /<\\g kfP jlrf/", "stl stl b'gglofFd} u[g ;s\\y]| tof/ .", "htl htl p;nf@ x][% oJ ag\\% ;r\\rf", "cgl ;a d'v aJn\\%g\\ x'g\\g s\\o} x]/ sr\\rf .", "%lge/ o;elq} #';\\%' ;|;f/ kf@", "h;tl/ dgdBhL ;Bv dln\\%g\\ dnf@ .", "ha gh/ nuf@ hJ k(]sJ ;'g]/",
+                "dg dg d jlrf[g] ag\\% w\\ofgL ag\/ .", "d'vx? ;a aJn\\%g\\ aJn\\b%g\\ rlq ;f/f", "?vx? ;a K'n\\%g\\ k|v aJn\\%g\\ xhf/fF .", "xl|*g xl|* ;FuL P Ps xfFuf r(]/ tntl/ ;anf@ aLr t;\\jL/ x]/ .", "d t blg blg k(\\g] u[% t\\o;\\t} u/]/", "stl stl b'glofFdf rlqsf g} k;]/ ."
+            ],
+            lesson9: ["yloJ u[dL j]nf xkxk yloJ #fd ax't", "an] H}F Asfz} bgbg yloJ wk\\wk;lt .", "a*J dfgL u[dL ?vtn ;'tL zLtn;lt", "HlsL hle\\/J v;\\/J (ns;Fu n]^L ;'v;lt' .", "yloJ oB^f &\"nJ ;sn kz'sJ ;l|x jgsJ", "b'j} rld\\nL AFvf ;'v;Fu *^]sJ ctl glsJ .", "%xf/L xfFufsJ x{bosg &)\\*f u/lblg]", "r/f a;\\g] aJn\\g] tntl/ /x]sJ ;'v blg] .",
+                "a*J d;\\tL kf@ ;'v;Fu glbf@sg t\\oxfF", "/x]sJ j]nfdf ;sn kz'sJ Og\\b\\/ ;'vdf .", "h/f afDf vJkL tntl/ a;]sJ cnlstl", "t\\oxfF gl;\\s] d\";f v'??? u/L bB*g stl .", "glbfPsJ /fhfsg /tl g^]/Lsg t\\oxfF", "rrL| r\\jL| r\\jL| u[b} j/lk/l xl|*] t\\oJ ;dodf .", "t\\o;} x]k\\bf x]k\\b} k%l k%l r(] AFu t\\o;sJ", "a*J gfrL pK\\/L v'??? u/] za\\b gglsJ .",
+                "rkfP sJxLn] /pF kgl d';] bfFtx?n]", "s'g} gfr] r(\\b} zl/pk/ nfdf k'%/n] .", "s'g] j[n] v'[v'/\\ tntl/ s'g} k'r\\%/tl/", "eoJ gfr} h;\\t} tlgsg t\\oxfF d]^\\g /x/ .", "a*J dfgL H[sJ %lg%lg chDJ % ;'t'jf", "% xk\\sf[bJ d\';fx?sg a*f ^'i\\^ eF*'jf .", "g^]/L rn\\%g\\ tL %lg%lg p xfg\\bJ % t kgl", "bu'[b} %n\\%g\\ tL rt'/ ;a %BF H}F ?vdgl ."
+            ],
+            lesson10: ["d]/J %fofF / d]/J Ps\\nJkg", "d]/f b'@ dlqx? %g\\ w]/} dft]sJ", "cg\\wsf/df %fofFn] d]/J ;fy %J*]/ uoJ", "t/ Ps\\nJkg t cH} kgl d]/J ;fy g} yloJ", "t}/]sf %g\\ efjgf t}/l/f%' Ps\\n}", "xts*L H} ;kgf s}bL ef%' Ps\\n}", "sJxL hfg ;s\\b}gg\\ t\\oxfF hfg] u[%' Ps\\n}", "cr]n t afgL nfu\\oJ v';L %' d Ps\\n}", "sJxL %}g dnf@ vJh\\g] x/fP gL afn %}g",
+                "vJh\\b}gg\\ slg yf % d t\\o;\\tJ aafn x}g", "x]*KJg % sfgdf uLt ;'gl/f%' Ps\\n}", "bldfu a\\/xdf)* d #'dl/f%' Ps\\n}", "sxln] sfxL nfu\\% d Ps\\n} x'g'sJ sf/) s]", ";fyL ef@ ;a} %g\\ e]^\\g gL ;s\\%' A/dn]", "hfg dg %}g st} xk\\tf blg eJ dxlg}", "s] u? H} efsJ % cglz\\rlt % ejli\\o", "el/sJ ^'k\\kfdf a;l rlr\\rf@ /fv\\g dg %", ";a}n] oJ u/ eg\\% d r} ;Jr\\%' cg\\t",
+                ";'t\\g c#l d ;Jr\\%' ;do ;a} v]/ uJ", "eJnlsJ blg gL t\\o;\\t} K/s s] g} % / xJ", "c[sJ j[i s]xL u[%' t\\oxL g} ;Jrl/fy] kJxJ/", "Egfdf d'xf/ x][%' K/s dfq\\ *g\\*lKJ/", "yf% d slg PZnJ %' t\\oxL kgl v';L %'", "d]/J sJxL ;'g\\blb}gg\\ ;asJ s'/f ;'g\\blg\\%'", "t\\o;}n] s'/f /fv\\bf H\\ofp gdfgL ;'g\\blg'", "gq\\ sL d]/J Ps\\nJkg / dnf@ a'Hblg'"
+            ]
         },
         Expert: {
             lesson1: ["asdf asdf"],
