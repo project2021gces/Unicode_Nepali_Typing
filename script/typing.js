@@ -604,6 +604,7 @@ function updateContent() {
             typedCharacters = "";
             typedWord.textContent = ""; // Clear the typed word
             displayNextWord();
+            erroraudio.pause();
         } else if (currentWord && event.key === currentWord[typedCharacters.length]) {
             // Correct key pressed, add to typed characters
             typedCharacters += event.key;
