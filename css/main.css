@@ -269,8 +269,8 @@ option:hover {
 .lvlprogress {
     display: flex;
     padding: 20px 30px 20px 30px;
-    min-width: 750px;
-    max-width: 800px;
+    width: 100%;
+    max-width: 700px;
     border: 2px solid white;
     flex-direction: column;
 }
@@ -287,29 +287,56 @@ option:hover {
 
 .levelbar {
     border: 2px solid #44a5cb;
+    border-radius: 8px;
     width: 100%;
     margin: 10px 0px 20px 0px;
 }
 
-.levelbar .bar {
-    width: 60%;
-    background-color: #44a5cb;
+.levelbar .progressbar {
+    width: 0%;
+    height: 25px;
+    background-color: #4caf50;
     text-align: center;
+    color: white;
+    justify-content: center;
 }
 
 .typingdetils {
-    border: 2px solid white;
-    position: relative;
     display: flex;
+    min-width: 140px;
     flex-direction: column;
-    padding: 10px;
     text-align: right;
-    padding: 20px 10px 20px 30px;
+    padding: 15px 0px 15px 15px;
+    border: 2px solid white;
+    border-right: none;
 }
 
-.typingdetils label {
+.typingdetils p {
     margin: 5px;
     justify-content: center;
+}
+
+.typingdata {
+    text-align: left;
+    min-width: 50px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 15px 15px 0;
+    border: 2px solid white;
+    border-left: none;
+}
+
+.typingdata p {
+    margin: 5px;
+    justify-content: center;
+}
+
+#mistakeLetters {
+    color: #ff474c;
+}
+
+#accuracy {
+    color: #3CC71E;
 }
 
 .container {
