@@ -1,28 +1,29 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, sans-serif;
 }
 
-body{
+body {
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(170deg, rgb(150, 200, 214) -40%, rgba(68, 165, 203, 0.95) 64%, rgba(255, 250, 250, 0.85) 64%, rgba(255, 250, 250, 0.85) 100%), url('../_images/BG.svg');
     background-position: center;
-    background-size: cover; 
+    background-size: cover;
     display: inline-block;
 }
-header{
+
+header {
     position: fixed;
-    width:100%;
+    width: 100%;
     top: 0;
     left: 0;
     z-index: 10;
     padding: 0 10px;
-   
 }
-.navbar{
+
+.navbar {
     display: flex;
     padding: 22px 0;
     align-items: center;
@@ -30,21 +31,25 @@ header{
     margin: 0 auto;
     justify-content: space-between;
 }
+
 .logo {
     width: 400px;
 }
-.navbar .logotext{
+
+.navbar .logotext {
     gap: 10px;
     display: flex;
     align-items: center;
     text-decoration: none;
 }
-.navbar .logotext h2{
+
+.navbar .logotext h2 {
     color: #fff;
     font-weight: 600;
     font-size: 1.7rem;
 }
-.container{
+
+.container {
     display: flex;
     position: relative;
     top: 50%;
@@ -54,20 +59,25 @@ header{
     max-width: 720px;
     transform: translate(-50%, -70%);
 }
-.form-box{
+
+.form-box {
     width: 90%;
     max-width: 450px;
     position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    background:#ffffff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
     padding: 50px 60px 50px;
-    text-align:center;
+    text-align: center;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 16px;
 }
+
+
 /*Eror and Success Message*/
-.form-box .input-group .error-txt{
+
+.form-box .input-group .error-txt {
     background: rgb(238, 198, 198);
     width: 100%;
     display: flex;
@@ -78,7 +88,8 @@ header{
     color: red;
     margin: 0px;
 }
-.form-box .input-group .success-txt{
+
+.form-box .input-group .success-txt {
     background: rgb(174, 217, 176);
     width: 100%;
     display: flex;
@@ -86,65 +97,72 @@ header{
     justify-content: left;
     padding-left: 15px;
     font-size: 0.96rem;
-    color:green;
+    color: green;
     margin: 0px;
 }
-.form-box h1{
+
+.form-box h1 {
     font-size: 30px;
     margin-bottom: 40px;
-    color: #0091ca ;
+    color: #0091ca;
     position: relative;
 }
-.form-box h1:after{
-    content:'';
-    width:30px;
-    height:4px;
-    border-radius:3px;
-    background:#0091ca;
-    position:absolute;
-    bottom:-12px;
-    left:50%;
-    transform:translateX(-50%);
+
+.form-box h1:after {
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: #0091ca;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
 }
-.input-field{
+
+.input-field {
     font-size: 0.96rem;
-    background:#eaeaea;
+    background: #eaeaea;
     margin: 10px 0;
     border-radius: 3px;
     display: flex;
     align-items: center;
 }
 
-input{
+input {
     width: 100%;
     background: transparent;
-    border:0;
-    outline:0;
+    border: 0;
+    outline: 0;
     padding: 15px 15px;
 }
 
-.input-field i{
+.input-field i {
     margin-left: 15px;
     color: #999;
 }
-.form-box a{
+
+.form-box a {
     font-size: 0.96rem;
     text-decoration: none;
     color: #0091ca;
 }
-.form-box a:hover{
+
+.form-box a:hover {
     text-decoration: underline;
 }
-.btn-field{
+
+.btn-field {
     width: 100%;
-    display: flex; 
+    display: flex;
     justify-content: center;
 }
-.btn-field button{
-    flex-basis:40%;
+
+.btn-field button {
+    flex-basis: 40%;
     font-size: 16px;
-    background:#0091ca;
-    color:white;
+    background: #0091ca;
+    color: white;
     font-weight: bold;
     height: 40px;
     border-radius: 20px;
@@ -154,9 +172,8 @@ input{
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.btn-field button:hover{
-    background-color:#0091ca;
+
+.btn-field button:hover {
+    background-color: #0091ca;
     transform: scale(1.01);
 }
-
-
