@@ -117,3 +117,16 @@ input {
     color: red;
     margin: 10px 0 15px 0;
 }
+
+.success-txt {
+    overflow: hidden;
+    background: rgb(174, 217, 176);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 15px;
+    font-size: 0.96rem;
+    color: green;
+    margin: 10px 0 15px 0;
+}
