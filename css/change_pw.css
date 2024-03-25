@@ -130,3 +130,9 @@ input {
     color: green;
     margin: 10px 0 15px 0;
 }
+
+.btn-field {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
