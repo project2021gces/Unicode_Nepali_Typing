@@ -136,3 +136,17 @@ input {
     display: flex;
     justify-content: center;
 }
+
+.btn-field button {
+    flex-basis: 40%;
+    font-size: 16px;
+    background: #0091ca;
+    color: white;
+    font-weight: bold;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    margin-top: 20px;
+}
