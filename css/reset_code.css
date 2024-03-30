@@ -65,3 +65,11 @@ header {
 .title-section {
     margin-bottom: 20px;
 }
+
+.title {
+    color: #38475a;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-decoration: capitalize;
+}
