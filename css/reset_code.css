@@ -82,3 +82,12 @@ header {
     margin-bottom: 10px;
     text-decoration: capitalize;
 }
+
+.input-field {
+    font-size: 0.96rem;
+    background: #eaeaea;
+    margin-top: 15px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+}
