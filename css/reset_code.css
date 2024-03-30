@@ -91,3 +91,11 @@ header {
     display: flex;
     align-items: center;
 }
+
+input {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 15px 15px;
+}
