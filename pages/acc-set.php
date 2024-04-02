@@ -125,7 +125,7 @@
                         <div class="privacyset tabshow" id="account-change-password">
                             <form action="acc-set.php" method="POST">
                             <div class="form-box">
-                                <span class="success-txt"><?php echo $sucesspw; ?></span>
+                                <span class="success-txt"><?php echo $successpw; ?></span>
                                     <div class="form-group">
                                         <label for="" class="form-label">Current Password</label>
                                         <input type="password" name="currentpw" id="currentpw" class="form-control">
