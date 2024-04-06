@@ -28,6 +28,11 @@ if (isset($_SESSION["user"])) {
                 <p class="para"> Please create your new password.</p>
                 <hr>
             </div>
-    
+        <span class="success-txt"><?php echo $success; ?></span>
+        <form action="" method="POST" class="form">
+            <div class="input-field">
+               <i class="fa-solid fa-lock"></i>
+               <input type="password" name="newpassword" id="newpassword" placeholder="New Password"> 
+            </div>
 </body>
 </html>
