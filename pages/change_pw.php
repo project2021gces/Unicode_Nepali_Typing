@@ -13,6 +13,14 @@ if (isset($_SESSION["user"])) {
     <title>Document</title>
 </head>
 <body>
+<header>
+        <nav class="navbar">
+        <div class="logo">
+            <a href="../index.php" class="logotext">
+                <h2>Unicode नेपाली Typing</h2>
+            </a>
+        </nav>
+    </header>
     
 </body>
 </html>
