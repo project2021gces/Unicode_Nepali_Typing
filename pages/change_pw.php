@@ -21,6 +21,13 @@ if (isset($_SESSION["user"])) {
             </a>
         </nav>
     </header>
+<!--Change Password Section-->
+<div class="container">
+            <div class="title-section">
+                <h2 class="title">Change Password</h2>
+                <p class="para"> Please create your new password.</p>
+                <hr>
+            </div>
     
 </body>
 </html>
