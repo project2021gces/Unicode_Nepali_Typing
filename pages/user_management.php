@@ -88,13 +88,12 @@
     }
     
     //update data form
-    $sucessuser ='';
-    $sucesspw ='';
+    $successuser ='';
+    $successpw ='';
     //To update username only
     if (isset($_POST['update_username'])) {
         $newusername = $_POST['newusername'];
         //to fetch the letest data
-        require_once "database_conn.php";
         $id =$_SESSION['user']['id'];
         $select_query = "SELECT * FROM users WHERE id = '$id'";
         $result = mysqli_query($conn, $select_query);
