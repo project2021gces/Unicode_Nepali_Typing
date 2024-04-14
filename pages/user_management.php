@@ -162,7 +162,7 @@
     if (isset($_POST['delete'])) {
         $confirmpassword = $_POST['confirm_password'];
         $email =$_SESSION['user']['email'];
-        require_once 'database_conn.php';
+        $newpasswordHash = password_hash($newpassword, PASSWORD_DEFAULT);
    if(empty($confirmpassword))
        {  
            echo "<script>alert('Enter your current password');</script>";
