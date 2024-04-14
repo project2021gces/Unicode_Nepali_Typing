@@ -148,7 +148,7 @@
                 $updatepw_query = "UPDATE users SET password = '$newpassword' WHERE id = '$id'";
                 $updatepw_result = mysqli_query($conn, $updatepw_query);
                 if ($updatepw_result > 0) {
-                     //$sucesspw="Password updated successfully!";
+                     //$successpw="Password updated successfully!";
                     echo "<script>alert('Password updated successfully!');</script>";
                 } 
             }
