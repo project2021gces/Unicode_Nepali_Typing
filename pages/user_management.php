@@ -41,9 +41,9 @@
              $prepareStmt = mysqli_stmt_prepare($stmt, $sql);
 
              if ($prepareStmt) {
-                 mysqli_stmt_bind_param($stmt, "sss", $username, $email, $password);
+                 mysqli_stmt_bind_param($stmt, "sss", $username, $email, $passwordHash);
                  mysqli_stmt_execute($stmt);
-                 $sucess = "You are registered successfully";
+                 $success = "You are registered successfully";
                  header("refresh:1,url=login.php");  // redirect to login page after delay of 1s
              } else {
                  die("Something went wrong");
