@@ -1,12 +1,13 @@
 <?php
- //--Signup Form validation--                  
+ session_start();
+ require_once "database_conn.php";              
  $fieldError = "";
  $usernameError = "";
  $emailError = "";
  $passwordError = "";
  $confirmError = "";
  $sucess = "";
-
+ //--Signup Form validation--   
  if (isset($_POST["signup"])) {
      $username = $_POST["username"];
      $email = $_POST["email"];
