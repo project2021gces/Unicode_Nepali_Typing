@@ -144,8 +144,8 @@
             //$confirmError = "Passwords do not match.";
              echo "<script>alert('Passwords do not match');</script>";
              }
-            elseif($currentpassword == $row['password']) {
-                $updatepw_query = "UPDATE users SET password = '$newpassword' WHERE id = '$id'";
+            elseif(passeord_verify ($currentpassword,$row["password"])) {
+                $updatepw_query = "UPDATE users SET password = '$newpasswordHash' WHERE id = '$id'";
                 $updatepw_result = mysqli_query($conn, $updatepw_query);
                 if ($updatepw_result > 0) {
                      //$successpw="Password updated successfully!";
