@@ -192,4 +192,81 @@
     if(isset($_POST['cancel'])){
         header('Location: main.php');
     }
+    $errors ="";
+    $success="";
+    $confirmError = "";
+       if(isset($_POST['sendotp'])){
+           $email = mysqli_real_escape_string($conn, $_POST['email']);
+           $check_email = "SELECT * FROM users WHERE email='$email'";
+           $result = mysqli_query($conn, $check_email);
+          // $user = mysqli_fetch_array($result, MYSQLI_ASSOC);
+          if(empty($email)){
+           $errors ="Field required";
+          }
+           else if(mysqli_num_rows($result) > 0){
+               $code = rand(999999, 111111);
+               $insert_code = "UPDATE users SET code = $code WHERE email = '$email'";
+               $run_query =  mysqli_query($conn, $insert_code);
+               if($run_query){
+                   $subject = "Password Reset Code";
+                   $message = "Your password reset code is $code";
+                   $sender = "From: unicodenepalityping@gmail.com";
+                   if (mail($email, $subject, $message, $sender)){
+                        $_SESSION['email']=$email;
+                       header('location: reset_code.php');
+                   }else{
+                       $errors = "Failed while sending code!";
+                   }
+               }else{
+                   $errors = "Something went wrong!";
+               }
+           }else{
+               $errors = "This email address does not exist!";
+           }
+       }
+       //if user click check reset otp button
+       if(isset($_POST['verify_code'])){
+           $otp_code = mysqli_real_escape_string($conn, $_POST['reset_otp']);
+           if(!empty($otp_code)){
+           $check_code = "SELECT * FROM users WHERE code = $otp_code";
+           $code_res = mysqli_query($conn, $check_code);
+           if(mysqli_num_rows($code_res) > 0){
+               $fetch_data = mysqli_fetch_assoc($code_res);
+               $email = $fetch_data['email'];
+               $_SESSION['email'] = $email;
+               header('location: change_pw.php');
+           }else{
+               $confirmError= "You've entered incorrect code!";
+           }
+       }
+       else{
+             $errors = "Field Required!";
+           }
+       }
+       //if user click change password button
+       if(isset($_POST['change_pw'])){
+           $newpassword = mysqli_real_escape_string($conn, $_POST['newpassword']);
+           $confirmpassword = mysqli_real_escape_string($conn, $_POST['confirmpassword']);
+           if(!empty($newpassword)){
+              if($newpassword == $confirmpassword){
+                   $code = 0;
+                   $email = $_SESSION['email'];//getting this email using session
+                   $passwordHash = password_hash($newpassword, PASSWORD_DEFAULT);
+                   $update_pass = "UPDATE users SET code = $code, password = '$passwordHash' WHERE email = '$email'";
+                   $run_query = mysqli_query($conn, $update_pass);
+                   if($run_query){
+                       $success = "Password changed successfully.";
+                       header('refresh:1,url=login.php');
+                   }else{
+                       $errors= "Failed to change your password!";
+                   }
+               }else{
+                   $confirmError = "Password not matched!";
+               }
+           }
+           else{
+               $errors ="Field required!";
+           }
+   }
+   ?>
 ?>
