@@ -125,7 +125,6 @@
              $newpassword = $_POST['newpw'];
              $repeatpassword = $_POST['repeatpw'];
              $id =$_SESSION['user']['id'];
-             require_once 'database_conn.php';
         if(empty($currentpassword)|| empty($newpassword) || empty($repeatpassword))
             {  
                 echo "<script>alert('All field are required');</script>";
