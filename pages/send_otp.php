@@ -14,6 +14,14 @@ if (isset($_SESSION["user"])) {
     <script src="https://kit.fontawesome.com/e6ec068722.js" crossorigin="anonymous"></script>
 </head>
 <body>
+<header>
+        <nav class="navbar">
+        <div class="logo">
+            <a href="../index.php" class="logotext">
+                <h2>Unicode नेपाली Typing</h2>
+            </a>
+        </nav>
+    </header>
     
 </body>
 </html>
