@@ -22,6 +22,12 @@ if (isset($_SESSION["user"])) {
             </a>
         </nav>
     </header>
+    <!--Reset Password Section-->
+    <div class="container">
+        <div class="title-section">
+            <h2 class="title">Forgot Your Login Password?</h2>
+            <p class="para"> Please enter your email below to get the reset email. </p>
+        </div>
     
 </body>
 </html>
