@@ -28,6 +28,20 @@ if (isset($_SESSION["user"])) {
             <h2 class="title">Forgot Your Login Password?</h2>
             <p class="para"> Please enter your email below to get the reset email. </p>
         </div>
+        <form action="" method="POST" class="form">
+            <div class="inputfield">
+                <label for="" class="label-title"> Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email address">
+                <span class="icon">&#9993;</span>
+            </div>
+            <!--Error and Success msz display-->
+            <span class="error-txt"><?php echo $errors; ?></span>
+            <div class="btn">
+                <button class="cancel-btn" id="cancel-btn"><a href="login.php">Cancel</a></button>
+                <button class="submit-btn" name="sendotp" type="submit">Send Password Reset Email</button>
+            </div>
+        </form>
+</div>
     
 </body>
 </html>
