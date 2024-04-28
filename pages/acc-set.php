@@ -1,6 +1,6 @@
 <?php
-  session_start();
-    include "user_management.php";
+  require_once "user_management.php";
+  
 
     $id =$_SESSION['user']['id'];
     require_once "database_conn.php";
