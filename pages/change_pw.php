@@ -34,5 +34,9 @@ if (isset($_SESSION["user"])) {
                <i class="fa-solid fa-lock"></i>
                <input type="password" name="newpassword" id="newpassword" placeholder="New Password"> 
             </div>
+            <div class="input-field">
+               <i class="fa-solid fa-lock"></i>
+               <input type="password" name="confirmpassword" id="confirmpassword" placeholder="Confirm Password">
+            </div>
 </body>
 </html>
