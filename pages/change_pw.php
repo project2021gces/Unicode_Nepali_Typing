@@ -38,5 +38,13 @@ if (isset($_SESSION["user"])) {
                <i class="fa-solid fa-lock"></i>
                <input type="password" name="confirmpassword" id="confirmpassword" placeholder="Confirm Password">
             </div>
+             <!--Error and Success message display -->
+             <span class="error-txt"><?php echo $confirmError; ?></span>
+            <span class="error-txt"><?php echo $errors; ?></span>
+                <div class="btn-field">
+                    <button class="change_pw" name="change_pw" type="submit">Change</button>
+                </div>
+        </form>
+    </div>
 </body>
 </html>
