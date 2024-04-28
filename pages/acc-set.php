@@ -1,6 +1,6 @@
 <?php
   require_once "user_management.php";
-  
+
 
     $id =$_SESSION['user']['id'];
     require_once "database_conn.php";
@@ -94,7 +94,7 @@
                                     <div id="user-availability-status"></div> 
 
                                     <span class="error-txt"><?php echo $usernameError; ?></span>
-                                    <span class="success-txt"><?php echo $sucessuser; ?></span>
+                                    <span class="success-txt"><?php echo $successuser; ?></span>
                                 </div>
                                 <div class="form-group">
                                     <label for="" class="form-label">E-mail: <?php echo ($_SESSION['user']['email'])?> </label>
